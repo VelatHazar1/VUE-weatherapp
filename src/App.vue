@@ -63,14 +63,6 @@ const dateBuilder = () => {
 
   date.value = ` ${event} ${month} ${day} ${year}`;
 };
-const formatDate = (timestamp) => {
-  const d = new Date(timestamp * 1000);
-  const date = d.getDate();
-  const month = d.getMonth() + 1;
-  const year = d.getFullYear();
-
-  return `${date}/${month}/${year}`;
-};
 </script>
 <template>
   <div

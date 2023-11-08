@@ -10,6 +10,7 @@ const baseUrl = "https://api.openweathermap.org/data/2.5/";
 const forecast = ref();
 const weather = ref();
 const date = ref();
+const nextFourDays = [];
 
 const fetchWeather = (e) => {
   fetch(`${baseUrl}weather?q=${e}&units=metric&APPID=${apiKey}`)
@@ -82,7 +83,7 @@ const dateBuilder = () => {
       ></LocationAndDate>
       <div class="weather-wrap">
         <Temperature :weather="weather" v-if="weather"></Temperature>
-        <WeatherForecast :forecast="forecast"></WeatherForecast>
+        <WeatherForecast :forecast="forecast" :date="date"></WeatherForecast>
       </div>
     </main>
   </div>

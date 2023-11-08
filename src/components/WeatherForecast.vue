@@ -16,7 +16,7 @@
           {{ props.forecast.list[13].dt_txt.slice(0, -8) }}
         </div>
         <div class="temp">
-          {{ Math.round(props.forecast.list[13].main.temp_min - 273.5) }}℃
+          {{ Math.round(props.forecast.list[13].main.temp_ - 273.5) }}℃
         </div>
         <div class="weather">{{ props.forecast.list[13].weather[0].main }}</div>
       </div>
@@ -26,7 +26,7 @@
         </div>
 
         <div class="temp">
-          {{ Math.round(props.forecast.list[21].main.temp_min - 273.5) }}℃
+          {{ Math.round(props.forecast.list[21].main.temp_ - 273.5) }}℃
         </div>
         <div class="weather">{{ props.forecast.list[21].weather[0].main }}</div>
       </div>
@@ -35,7 +35,7 @@
           {{ props.forecast.list[29].dt_txt.slice(0, -8) }}
         </div>
         <div class="temp">
-          {{ Math.round(props.forecast.list[29].main.temp_min - 273.5) }}℃
+          {{ Math.round(props.forecast.list[29].main.temp_ - 273.5) }}℃
         </div>
         <div class="weather">{{ props.forecast.list[29].weather[0].main }}</div>
       </div>

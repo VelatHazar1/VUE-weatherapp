@@ -107,6 +107,11 @@ main {
   height: 30rem;
   border-radius: 1rem;
 }
+@media (max-width: 562px) {
+  .forecast .forecast-wrap {
+    width: 100%;
+  }
+}
 .day {
   display: flex;
   justify-content: space-between;

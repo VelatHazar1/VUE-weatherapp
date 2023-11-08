@@ -19,12 +19,15 @@ main {
 }
 
 .search-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   margin-bottom: 30px;
 }
 .search-box .search-bar {
   display: block;
-  width: 100%;
+  width: 80%;
   padding: 15px;
 
   color: #313131;
@@ -82,9 +85,14 @@ main {
 
   margin: 10px 0;
 }
-
+.forecast {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 .forecast-wrap {
   display: grid;
+
   gap: 10px;
   grid-template-columns: repeat(2, 1fr);
   grid-auto-rows: minmax(100px, auto);
